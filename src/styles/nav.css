@@ -1,0 +1,54 @@
+.nav-button span,
+.nav-button span:after,
+.nav-button span:before {
+    transition: all 500ms ease-in-out;
+    border-radius: 10px;
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    display: block;
+    content: "";
+    background: #ffffff;
+}
+
+.sticky .nav-button span,
+.sticky .nav-button span:after,
+.sticky .nav-button span:before {
+    background: rgb(63, 63, 63) !important;
+}
+
+.nav-button span:before {
+    top: -10px;
+}
+
+.nav-button span:after {
+    bottom: -10px;
+}
+
+.nav-button.active span {
+    background-color: transparent;
+}
+
+.nav-button.active span:before,
+.nav-button.active span:after {
+    top: 0;
+}
+
+.nav-button.active span:after {
+    transform: rotate(-45deg);
+}
+
+.nav-button.active span:before {
+    transform: rotate(45deg);
+}
+
+.nav-button {
+    display: none;
+}
+
+/*  */
+
+.nav-item-responsive{
+    padding: 20px;
+    cursor: pointer;
+}
