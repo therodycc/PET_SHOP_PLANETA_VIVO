@@ -1,7 +1,6 @@
 import { ButtonNetwork } from "@/components/common/button/button-network"
 import { TitleText } from "@/components/common/title-text/title-text"
-import { faFacebookF, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
-import { faPhone } from "@fortawesome/free-solid-svg-icons"
+import { networks } from "@/shared/networks"
 import { useCallback } from "react"
 import { Location } from "../location"
 
@@ -43,42 +42,3 @@ export const NetworkSection = () => {
         </section>
     )
 }
-
-
-const networks = [
-    {
-        title: "Facebook",
-        network: "facebook",
-        description: "tumaskotard",
-        icon: faFacebookF,
-        link: "https://www.facebook.com/tumaskotard",
-    },
-    {
-        title: "Instagram",
-        network: "instagram",
-        description: "@tumaskotard",
-        icon: faInstagram,
-        link: "https://www.instagram.com/tumaskotard",
-    },
-    {
-        title: "WhatsApp",
-        network: "whatsapp",
-        description: "+1 (829) 458-7526",
-        icon: faWhatsapp,
-        link: "https://wa.me/",
-    },
-    {
-        title: "Cel",
-        network: "call",
-        description: "+1 (829) 458-7526",
-        icon: faPhone,
-        link: "",
-    },
-    {
-        title: "Tel",
-        network: "tell",
-        description: "+1 (809) 414-5572",
-        icon: faPhone,
-        link: "",
-    },
-]

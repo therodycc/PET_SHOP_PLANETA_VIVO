@@ -1,6 +1,24 @@
-import React from "react";
+import { navOptions } from "@/settings/nav-options";
+import { networks } from "@/shared/networks";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useCallback } from "react";
+import { Link } from "react-scroll";
+
 
 export const Footer = () => {
+    const call = useCallback((phoneNumber: number) => {
+        const encodedNumber = encodeURIComponent(`+1${phoneNumber}`);
+        window.open(`tel:${encodedNumber}`);
+    }, []);
+
+    const handleNetwork = useCallback((link: string, network: string) => {
+        if (network === "call") return call(8294587526)
+        if (network === "tell") return call(8094145572)
+
+        window.open(link, '_blank');
+    }, [call])
+
     return (
         <footer id="footer" className="footer">
             <div className="container">
@@ -11,32 +29,34 @@ export const Footer = () => {
                         </a>
                         <p>Ofrecemos productos y servicios agroveterinarios y control de plagas.</p>
                         <div className="social-links d-flex mt-4">
-                            <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
-                            <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
-                            <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                            <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                            {networks.map((item) =>
+                                <a href="#" style={{ width: "50px", height: "50px", lineHeight: "50px" }}>
+                                    <FontAwesomeIcon
+                                        icon={item.icon as IconProp}
+                                        key={item.title}
+                                        onClick={() => handleNetwork(item.link, item.title)} 
+                                        style={{ width: "20px", height: "20px", }}
+                                        />
+                                </a>
+                            )}
                         </div>
                     </div>
 
                     <div className="col-lg-2 col-6 footer-links">
                         <h4>Navega</h4>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="col-lg-2 col-6 footer-links">
-                        <h4>Nuestros Servicios</h4>
-                        <ul>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            {navOptions.map((opt) => {
+                                const { title, ...options } = opt
+                                return (
+                                    <Link
+                                        {...options}
+                                        key={opt.to}
+                                        className={`option-header-item d-block mb-3`}
+                                    >
+                                        {title}
+                                    </Link>
+                                )
+                            })}
                         </ul>
                     </div>
                 </div>
@@ -44,10 +64,10 @@ export const Footer = () => {
 
             <div className="container mt-4">
                 <div className="copyright">
-                    &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Impact</span></strong>. Derechos Reservados.
                 </div>
                 <div className="credits">
-                    Designed by Rody Castro
+                    Diseñado por Rody Castro
                 </div>
             </div>
 

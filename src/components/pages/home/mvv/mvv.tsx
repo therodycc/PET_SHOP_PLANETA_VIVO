@@ -1,5 +1,4 @@
 import { TitleText } from "@/components/common/title-text/title-text";
-import React from "react";
 
 export const Mvv = () => {
     return (<>
@@ -9,16 +8,11 @@ export const Mvv = () => {
 
                 <div className="row gy-4">
 
-                    <div className="col-lg-6">
-                        <div className="content px-xl-5">
-                            <h3>Frequently Asked <strong>Questions</strong></h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                            </p>
-                        </div>
+                    <div className="col-lg-5">
+                        <img className="col-lg-10 m-auto" src="/assets/imgs/logo-rounded.png" alt="" />
                     </div>
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-7">
                         <div className="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
                             {data.map((item, index) => (<Component key={index} {...item} />))}
                         </div>

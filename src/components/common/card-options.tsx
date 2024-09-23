@@ -17,12 +17,14 @@ export const Services: React.FC = () => {
                 return (
                     <>
                         <div className="col-lg-4 col-md-6">
-                            <div className="service-item  position-relative">
+                            <div className="service-item  position-relative d-flex flex-column">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faAudible as any} />
                                 </div>
-                                <h3>{element.title}</h3>
-                                <p className="mb-3">{element.desc}</p>
+                                <div>
+                                    <h3>{element.title}</h3>
+                                </div>
+                                <p className="mb-3" style={{ flex: "1 1 auto" }}>{element.desc}</p>
                                 <a
                                     onClick={() => handleWhatsAppService(element.title)}
                                     className=" btn-get-started cursor-pointer"

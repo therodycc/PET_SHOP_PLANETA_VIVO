@@ -26,6 +26,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
       <link rel="stylesheet" href="/assets/css/animate.min.css" />
       <link rel="stylesheet" href="/assets/js/bootstrap.bundle.min.js" />
+      <link rel="stylesheet" href="/assets/js/main.js" />
 
       <meta name="description" content="Ofrecemos productos y servicios agroveterinaria y control de plagas." />
       <meta
