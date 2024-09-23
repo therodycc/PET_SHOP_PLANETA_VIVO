@@ -5,18 +5,14 @@ export const Mvv = () => {
         <section id="mvv-section" className="faq">
             <TitleText title={"Sobre nosotros"} />
             <div className="container" data-aos="fade-up">
-
                 <div className="row gy-4">
-
-                    <div className="col-lg-5">
-                        <img className="col-lg-10 m-auto" src="/assets/imgs/logo-rounded.png" alt="" />
+                    <div className="col-lg-5 col-md-12 d-flex justify-content-center">
+                        <img className="col-10 m-auto" src="/assets/imgs/logo-rounded.png" alt="" />
                     </div>
-
                     <div className="col-lg-7">
                         <div className="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
                             {data.map((item, index) => (<Component key={index} {...item} />))}
                         </div>
-
                     </div>
                 </div>
 
@@ -32,8 +28,7 @@ export const Mvv = () => {
 export const Component = ({ src, title, description, reverse }: any) => {
     return <div className="accordion-item">
         <h3 className="accordion-header">
-            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                <span className="num"></span>
+            <button className="accordion-button" type="button" >
                 {title}
             </button>
         </h3>
