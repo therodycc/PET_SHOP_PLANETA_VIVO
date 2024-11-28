@@ -32,25 +32,25 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
         name="keywords"
         content="Pet Shop Epagricula RD, Ofrecemos productos y servicios agroveterinaria y control de plagas."
       />
-      <link rel="canonical" href="https://phoneclinic.netlify.app/" />
+      <link rel="canonical" href="https://www.instagram.com/epagriculard" />
       <meta name="author" content="Rody Castro" />
       <meta name="robots" content="index,follow" />
       <link rel="icon" href="/favicon.ico" />
 
       {/* <!-- Facebook Meta Tags --> */}
-      <meta property="og:url" content="https://phoneclinic.netlify.app/" />
+      <meta property="og:url" content="https://www.instagram.com/epagriculard" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Epagricula RD" />
       <meta property="og:description" content="Ofrecemos productos y servicios agroveterinaria y control de plagas." />
-      <meta property="og:image" content="https://phoneclinic.netlify.app/assets/imgs/back-2.jpg" />
+      <meta property="og:image" content="https://petshopplanetavivo-production.up.railway.app/assets/imgs/logo.jpeg" />
 
       {/* <!-- Twitter Meta Tags --> */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="phoneclinic.netlify.app" />
-      <meta property="twitter:url" content="https://phoneclinic.netlify.app/" />
+      <meta property="twitter:domain" content="https://petshopplanetavivo-production.up.railway.app" />
+      <meta property="twitter:url" content="https://www.instagram.com/epagriculard" />
       <meta name="twitter:title" content="Epagricula RD" />
       <meta name="twitter:description" content="Ofrecemos productos y servicios agroveterinaria y control de plagas." />
-      <meta name="twitter:image" content="https://phoneclinic.netlify.app/assets/imgs/back-2.jpg" />
+      <meta name="twitter:image" content="https://petshopplanetavivo-production.up.railway.app/assets/imgs/logo.jpeg" />
     </Head >
 
     {/* <LoadingPage /> */}
