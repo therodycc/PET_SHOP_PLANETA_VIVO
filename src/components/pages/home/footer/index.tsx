@@ -24,8 +24,8 @@ export const Footer = () => {
             <div className="container">
                 <div className="row gy-4">
                     <div className="col-lg-5 col-md-12 footer-info">
-                        <a href="index.html" className="logo d-flex align-items-center">
-                            <span>Pet Shop Planeta Vivo</span>
+                        <a href="#" className="logo d-flex align-items-center">
+                            <span>Epagricula RD</span>
                         </a>
                         <p>Ofrecemos productos y servicios agroveterinarios y control de plagas.</p>
                         <div className="social-links d-flex mt-4">

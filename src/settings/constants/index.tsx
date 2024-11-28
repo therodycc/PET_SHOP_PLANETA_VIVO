@@ -1,1 +1,1 @@
-export const TITLE = "Pet Shop Planeta Vivo"
+export const TITLE = "Pet Shop Epagricula RD"

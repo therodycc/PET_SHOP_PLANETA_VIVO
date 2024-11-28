@@ -1,6 +1,6 @@
 import { Button } from "@/components/common/button";
 import { useRouter } from "next/router";
-import { CSSProperties, StyleHTMLAttributes, useCallback } from "react";
+import { CSSProperties, useCallback } from "react";
 
 const Page404 = () => {
     const router = useRouter();
@@ -17,7 +17,7 @@ const Page404 = () => {
             >
                 <h2 className="principal-title animate__animated animate__tada">
                     Pagina no encontrada en
-                    <b className="text-white"> IPet Shop Planeta Vivo</b>
+                    <b className="text-white"> Epagricula RD</b>
                 </h2>
                 <div className="mt-3">
                     <Button onClick={goHome}>Volver al inicio</Button>

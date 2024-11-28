@@ -6,16 +6,16 @@ export const networks = [
     {
         title: "Facebook",
         network: "facebook",
-        description: "planetavivord",
+        description: "epagriculard",
         icon: faFacebookF,
-        link: "https://www.facebook.com/planetavivord",
+        link: "https://www.facebook.com/epagriculard",
     },
     {
         title: "Instagram",
         network: "instagram",
-        description: "@planetavivord",
+        description: "@epagriculard",
         icon: faInstagram,
-        link: "https://www.instagram.com/planetavivord",
+        link: "https://www.instagram.com/epagriculard",
     },
     {
         title: "WhatsApp",
