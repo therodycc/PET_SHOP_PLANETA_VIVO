@@ -20,7 +20,7 @@ export const Header = () => {
                                 </div>
                                 <div className="row  w-100 mt-5">
                                     {Object.entries(schedules).map(([key, value]) =>
-                                        <div className="col-lg-4 mb-3 info-container-schedule">
+                                        <div key={key} className="col-lg-4 mb-3 info-container-schedule">
                                             <ButtonNetwork
                                                 key={key}
                                                 title={key}

@@ -16,7 +16,7 @@ export const Services: React.FC = () => {
             {services.map((element, index) => {
                 return (
                     <>
-                        <div className="col-lg-4 col-md-6">
+                        <div key={index} className="col-lg-4 col-md-6">
                             <div className="service-item  position-relative d-flex flex-column">
                                 <div className="icon">
                                     <FontAwesomeIcon icon={faAudible as any} />
