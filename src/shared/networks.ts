@@ -8,7 +8,7 @@ export const networks = [
         network: "facebook",
         description: "epagriculard",
         icon: faFacebookF,
-        link: "https://www.facebook.com/epagriculard",
+        link: "https://www.facebook.com/profile.php?id=61559411147754",
     },
     {
         title: "Instagram",
