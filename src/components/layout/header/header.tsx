@@ -34,7 +34,7 @@ export const Header = () => {
                             </div>
                             <div className="col-lg-4 order-1 order-lg-2 mt-5">
                                 <div className="container-logo-img-fluid">
-                                    <img src="/assets/imgs/logo.jpeg" className="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100" />
+                                    <img src="/assets/imgs/logo.png" className="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100" />
                                 </div>
                             </div>
                         </div>
