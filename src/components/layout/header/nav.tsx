@@ -2,6 +2,7 @@ import { navOptions } from "@/settings/nav-options";
 import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { MenuResponsive } from "./menu-responsive";
+import { useRouter } from "next/router";
 
 interface Props {}
 
@@ -9,6 +10,7 @@ export const Nav = ({}: Props) => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [activeSection, setActiveSection] = useState("header-section");
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,10 +42,21 @@ export const Nav = ({}: Props) => {
     setIsMenuActive((_prev) => !_prev);
   }, [setIsMenuActive]);
 
+  const goHome = useCallback(() => {
+    const el = document.getElementById("header-section");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <nav className={`header-menu ${isSticky || isMenuActive ? "sticky" : ""}`}>
       <div className="logo-header">
-        <div className="title-name">
+        <div
+          className="title-name"
+          onClick={goHome}
+          style={{ cursor: "pointer" }}
+        >
           <h1 className="text-white">
             Epagricula
             <span>RD</span>
