@@ -25,9 +25,9 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   const {
-    title = "Epagricula RD - Productos y servicios agroveterinarios",
+    title = "Epagricula RD - Productos y servicios agroveterinarios | Tienda de mascotas",
     description = "Ofrecemos productos y servicios agroveterinaria y control de plagas.",
-    keywords = "agroveterinaria, control de plagas, productos agrícolas, servicios agrícolas",
+    keywords = "agroveterinaria, control de plagas, productos agrícolas, servicios agrícolas, epagricula, tienda veterinaria, veterinarias santo domingo este, Tienda de mascotas",
     canonical = "https://www.epagriculard.com",
     ogImage = "https://www.epagriculard.com/assets/imgs/logo.png",
   } = Component.seo || {};
@@ -50,6 +50,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
 
         <link rel="canonical" href={canonical} />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:locale" content="es_DO" />
 
         {/* Facebook Open Graph */}
         <meta property="og:type" content="website" />
