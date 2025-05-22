@@ -64,6 +64,8 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:url" content={canonical} />
         <meta name="twitter:image" content={ogImage} />
+
+        <meta name="google-site-verification" content="j_W21-wd34lYOK8M-LpI4gILrZ7_JPcAoO0oOm43NKE" />
       </Head>
       <Script
         src="/assets/js/bootstrap.bundle.min.js"
