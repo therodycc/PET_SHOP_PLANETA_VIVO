@@ -27,7 +27,7 @@ export const Footer = () => {
                         <a href="#" className="logo d-flex align-items-center">
                             <span>Epagricula RD</span>
                         </a>
-                        <p>Ofrecemos productos y servicios agroveterinarios y control de plagas.</p>
+                        <p>Tiendas de mascotas y servicios</p>
                         <p>Tienda de mascotas, Santo Domingo Este, El Almirante</p>
                         <div className="social-links d-flex mt-4">
                             {networks.map((item) =>

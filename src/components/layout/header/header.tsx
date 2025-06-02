@@ -13,7 +13,7 @@ export const Header = () => {
                         <div className="row  mt-5" data-aos="fade-in">
                             <div className="col-lg-8 d-flex flex-column text-center text-lg-start " style={{ marginTop: '150px' }}>
                                 <h2>Pet Shop <span>Epagricula RD</span></h2>
-                                <p>Ofrecemos productos y servicios agroveterinarios y control de plagas.</p>
+                                <p>Tiendas de mascotas y servicios</p>
                                 <div className="d-flex justify-content-center justify-content-lg-start">
                                     <a href="#network-section" className="btn-get-started">Contáctanos</a>
                                     <a href="#services-section" className="glightbox btn-watch-video d-flex align-items-center"><i className="bi bi-play-circle"></i><span>Ver servicios</span></a>
