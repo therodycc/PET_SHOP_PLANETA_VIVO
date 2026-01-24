@@ -1,5 +1,5 @@
 import { Button } from "@/components/common/button";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CSSProperties, useCallback } from "react";
 
 const Page404 = () => {

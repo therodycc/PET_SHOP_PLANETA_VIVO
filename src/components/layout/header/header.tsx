@@ -1,4 +1,4 @@
-
+"use client"
 import { ButtonNetwork } from "@/components/common/button/button-network";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { Nav } from "./nav";

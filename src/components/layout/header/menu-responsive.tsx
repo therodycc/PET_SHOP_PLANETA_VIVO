@@ -1,5 +1,4 @@
-import { navOptions } from "@/settings/nav-options"
-import React from 'react'
+import { navOptions } from "@/settings/nav-options";
 import { Link } from "react-scroll";
 
 interface Props {

@@ -1,8 +1,11 @@
-@import url('./fonts.css');
-@import url('./header.css');
 @import url('./nav.css');
-@import url('./globals.css');
-@import url('./general.css');
-@import url('./footer.css');
-@import url('./loading.css');
+@import url('./animate.min.css');
+@import url('./bootstrap.min.css');
 @import url('./card-element.css');
+@import url('./fonts.css');
+@import url('./footer.css');
+@import url('./general.css');
+@import url('./globals.css');
+@import url('./header.css');
+@import url('./Home.module.css');
+@import url('./loading.css');

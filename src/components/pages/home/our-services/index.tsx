@@ -1,6 +1,6 @@
+"use client"
 import { Services } from "@/components/common/card-options"
 import { TitleText } from "@/components/common/title-text/title-text"
-import React from 'react'
 
 export const OurServices = () => {
     return (<>

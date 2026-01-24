@@ -20,14 +20,14 @@ export const networks = [
     {
         title: "WhatsApp",
         network: "whatsapp",
-        description: "+1 (829) 458-7526",
+        description: "+1 (829) 399-3723",
         icon: faWhatsapp,
-        link: "https://wa.me/18294587526",
+        link: "https://wa.me/18293993723",
     },
     {
         title: "Cel",
         network: "call",
-        description: "+1 (829) 458-7526",
+        description: "+1 (829) 399-3723",
         icon: faMobileAlt,
         link: "",
     },

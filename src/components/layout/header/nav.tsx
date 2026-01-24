@@ -1,8 +1,7 @@
 import { navOptions } from "@/settings/nav-options";
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { MenuResponsive } from "./menu-responsive";
-import { useRouter } from "next/router";
 
 interface Props {}
 
@@ -10,7 +9,7 @@ export const Nav = ({}: Props) => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [activeSection, setActiveSection] = useState("header-section");
-  const router = useRouter();
+
 
   useEffect(() => {
     const handleScroll = () => {

@@ -1,3 +1,4 @@
+"use client"
 import { ButtonNetwork } from "@/components/common/button/button-network"
 import { TitleText } from "@/components/common/title-text/title-text"
 import { networks } from "@/shared/networks"

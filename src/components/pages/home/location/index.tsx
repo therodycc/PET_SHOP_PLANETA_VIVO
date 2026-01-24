@@ -1,3 +1,4 @@
+"use client"
 import { TitleText } from "@/components/common/title-text/title-text";
 
 export const Location = () => {

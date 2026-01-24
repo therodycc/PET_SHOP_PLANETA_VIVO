@@ -1,3 +1,4 @@
+"use client"
 import { TitleText } from "@/components/common/title-text/title-text";
 
 export const Mvv = () => {
@@ -23,8 +24,6 @@ export const Mvv = () => {
 };
 
 
-
-
 export const Component = ({ src, title, description, reverse }: any) => {
     return <div className="accordion-item">
         <h3 className="accordion-header">
@@ -32,7 +31,7 @@ export const Component = ({ src, title, description, reverse }: any) => {
                 {title}
             </button>
         </h3>
-        <div id="faq-content-1" className="accordion-collapse collapse show" data-bs-parent="#faqlist">
+        <div>
             <div className="accordion-body">
                 {description}
             </div>
