@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Comfortaa } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 import "@/styles/styles.css";
 
@@ -82,6 +83,7 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
         <Script src="/assets/js/main.js" strategy="lazyOnload" />
+        <Analytics/>
       </body>
     </html>
   );
