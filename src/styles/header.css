@@ -2,8 +2,6 @@
     width: 100%;
     min-height: 700px;
     position: relative;
-    background: #000000;
-    /* fallback for old browsers */
     background: #008374;
     background-position: bottom;
     display: flex;
