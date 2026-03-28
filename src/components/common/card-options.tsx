@@ -6,7 +6,7 @@ import { useCallback } from "react";
 export const Services: React.FC = () => {
   const handleWhatsAppService = useCallback((service: string) => {
     window.open(
-      `https://wa.me/18293993723?text=Saludos! Me gustaría saber más sobre el servicio de ${service}`,
+      `https://wa.me/18094145572?text=Saludos! Me gustaría saber más sobre el servicio de ${service}`,
       "_blank"
     );
   }, []);
