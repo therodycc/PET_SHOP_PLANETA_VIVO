@@ -13,8 +13,8 @@ export const NetworkSection = () => {
     }, []);
 
     const handleNetwork = useCallback((link: string, network: string) => {
-        if (network === "call") return call(8294587526)
-        if (network === "tell") return call(8094145572)
+        if (network === "call") return call(8094145572)
+        if (network === "tell") return call(8293993723)
 
         window.open(link, '_blank');
     }, [call])

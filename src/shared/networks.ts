@@ -1,6 +1,6 @@
 
 import { faFacebookF, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
-import { faMobileAlt, faMobilePhone, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { faMobileAlt, faPhone } from "@fortawesome/free-solid-svg-icons"
 
 export const networks = [
     {
@@ -20,21 +20,21 @@ export const networks = [
     {
         title: "WhatsApp",
         network: "whatsapp",
-        description: "+1 (829) 399-3723",
+        description: "+1 (809) 414-5572",
         icon: faWhatsapp,
         link: "https://wa.me/18094145572",
     },
     {
         title: "Cel",
         network: "call",
-        description: "+1 (829) 399-3723",
+        description: "+1 (809) 414-5572",
         icon: faMobileAlt,
         link: "",
     },
     {
         title: "Tel",
         network: "tell",
-        description: "+1 (809) 414-5572",
+        description: "+1 (829) 399-3723",
         icon: faPhone,
         link: "",
     },
